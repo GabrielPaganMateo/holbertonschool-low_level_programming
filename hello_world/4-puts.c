@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-int main()
+int main(void)
 {
 
 	char firstputs[] = "\"Programming is like building a multilingual puzzle";
 
 	puts(firstputs);
 
-	return 0;
+	return (0);
 }

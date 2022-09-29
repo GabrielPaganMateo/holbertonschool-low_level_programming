@@ -2,9 +2,9 @@
 /**
  * main - Print a string
  *
- * Description: Prints a text that says 'with proper grammar, but the outcome is a piece of art,'
+ * Description: Print 'with proper grammar, but the outcome is a piece of art,'
  *
- * Return Always 0 (Success)
+ * Return: Always 0 (Success)
  *
  */
 int main(void)

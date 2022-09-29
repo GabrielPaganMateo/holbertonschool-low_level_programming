@@ -2,7 +2,7 @@
 /**
  * main - Print a string
  *
- * Description:
+ * Description: Prints a text that says 'with proper grammar, but the outcome is a piece of art,'
  *
  * Return Always 0 (Success)
  *

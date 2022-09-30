@@ -1,4 +1,4 @@
-# Holberton School Low level programming Hello World project
+# Holberton School Low level programming project
 
 ## This directory was made to store the tasks and work done as part of the "Hello World Project"
 

@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main- 
- * Description:
+ * main- for loop
+ * Description: Print the alphabet
  * Result: Always 0 (Success)
  */
 int main(void)
@@ -13,5 +13,5 @@ int main(void)
 		putchar(ch);
 	}
 		putchar('\n');
-	return(0);
+	return (0);
 }

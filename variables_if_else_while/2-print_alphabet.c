@@ -2,7 +2,7 @@
 /**
  * main- for loop
  * Description: Print the alphabet
- * Result: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {

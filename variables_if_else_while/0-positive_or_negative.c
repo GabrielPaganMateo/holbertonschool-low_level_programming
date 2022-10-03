@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Assign random number and print sign 
- * Description: Assign random number to variable n and print the sign of variable n
- * Return : Always 0 (Success)
+ * main - Assign random number and print sign
+ * Description: Assign random number to variable n and print the sign
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -17,7 +17,7 @@ int main(void)
 		printf("%i is positive\n", n);
 	else if (n == 0)
 		printf("%i is zero\n", n);
-	else 
+	else
 		printf("%i is negative\n", n);
 	return (0);
 }

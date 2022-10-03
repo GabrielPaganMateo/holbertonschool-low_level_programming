@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main- for loop
+ * main- do while & for loops that print alphabet
  * Description: Print the alphabet
  * Return: Always 0 (Success)
  */

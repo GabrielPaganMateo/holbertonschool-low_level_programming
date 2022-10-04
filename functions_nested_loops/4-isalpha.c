@@ -5,7 +5,7 @@
  *
  * Return: 1 if c is a letter, otherwise 0
  */
-int _isalpha(int c);
+int _isalpha(int c)
 {
 	if (c <= 'z' && c >= 'a')
 	{

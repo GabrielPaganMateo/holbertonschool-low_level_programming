@@ -7,7 +7,7 @@
  */
 int _abs(int)
 {
-	int n;
+	int n, x, y;
 
 	x = (n * (-1));
 	y = n;

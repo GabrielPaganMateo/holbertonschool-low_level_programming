@@ -4,7 +4,7 @@
  *
  * Return: Alphabet ten times, in lowercase
  */
-int main (void)
+void print_alphabet_x10(void)
 {
 	int ti;
 	char al;

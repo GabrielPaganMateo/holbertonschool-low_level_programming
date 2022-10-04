@@ -4,7 +4,7 @@
  *
  * Return: Prints a file called _putchar
  */
-int main(void)
+int _putchar(char c)
 {
 	_putchar('_');
 	_putchar('p');

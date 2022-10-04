@@ -5,7 +5,7 @@
  *
  * Return: Absolute value of int
  */
-int _abs(int)
+int _abs(int n)
 {
 	int n, x, y;
 

@@ -8,7 +8,7 @@ int main(void)
 {
 	char dig;
 
-	for(dig = '0' ; dig <= '9' ; dig++)
+	for (dig = '0' ; dig <= '9' ; dig++)
 	{
 		printf("%c", dig);
 	}

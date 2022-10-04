@@ -11,7 +11,6 @@ int main(void)
 	for (pr0n = '0' ; pr0n <= '9' ; pr0n++)
 	{
 		putchar(pr0n);
-		
 		if (pr0n != '9')
 		{
 			putchar(',');
@@ -21,4 +20,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-

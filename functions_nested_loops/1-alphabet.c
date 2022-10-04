@@ -4,7 +4,7 @@
  *
  * Return: alphabet in lowercase
  */
-void print_alphabet(void)
+int print_alphabet(void)
 {
 	char al;
 

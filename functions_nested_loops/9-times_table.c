@@ -10,8 +10,6 @@ void times_table(void)
 
         for (x = 0 ; x <= 9 ; x++)
         {
-		_putchar('0');
-
                 for (y = 0 ; y <= 9 ; y++)
                 {
 
@@ -19,7 +17,6 @@ void times_table(void)
                 firstdigit = ((z / 10) + '0');
                 lastdigit = ((z % 10) + '0');
 
-		_putchar(',');
 		_putchar(' ');
 
 		if (z <= 9)
@@ -33,7 +30,11 @@ void times_table(void)
 			
 		_putchar(lastdigit);
 
-                       
+		if (y <= 8)
+		{
+		_putchar(',');
+		}
+
                 }
         _putchar('\n');
         }

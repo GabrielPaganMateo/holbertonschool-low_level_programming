@@ -27,19 +27,27 @@ void times_table(void)
 			_putchar(z2);
 			_putchar(',');
 		}
-		else
-		{
+			else
+		{	
 			_putchar(z2);
 		}
+		
 		if (z1 >= 49 && z1 <= 57)
+		{	
+			if (y <= 8)
+			{
+				_putchar(' ');
+			}
+		}
+		else if 
 		{
 			_putchar(' ');
-		}
-		else
-		{
-			_putchar(' ');
 			_putchar(' ');
 		}
+		if (z2 >= 48 && y <= 8)
+			{
+				_putc
+			}
 		}
 	_putchar('\n');
 	}

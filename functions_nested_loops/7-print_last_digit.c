@@ -4,27 +4,28 @@
  * @n: last digit of number
  * Return: value of last digit
  */
-int print_last_digit(int)
+int print_last_digit(int n)
 {
 	long int x;
 
 		
 	x = n % 10;
+	n = x
 	
 	if (x < 0)
 	{
 		x = n * (-1);
 		_putchar(x);
-		return (x);
+		return (n);
 	}
 	else if (x > 0)
 	{
 		_putchar(x);
-		return (x);
+		return (n);
 	}
 	else
 	{
 		_putchar(x);
-		return (x);
+		return (n);
 	}
 }

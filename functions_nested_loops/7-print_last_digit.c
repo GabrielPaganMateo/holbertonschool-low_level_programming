@@ -4,7 +4,7 @@
  * @n: last digit of number
  * Return: value of last digit
  */
-int print_last_digit(int n)
+int print_last_digit()
 {
 	long int x;
 
@@ -24,6 +24,6 @@ int print_last_digit(int n)
 	{
 		_putchar('0' + x);
 	}
-
-	return (x);
+	
+	return (0);
 }

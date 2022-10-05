@@ -17,7 +17,7 @@ void times_table(void)
                 firstdigit = ((z / 10) + '0');
                 lastdigit = ((z % 10) + '0');
 
-		if (z <= 9)
+		if (z <= 9 && y != 0)
 		{
 			_putchar(' ');
 		}
@@ -25,14 +25,15 @@ void times_table(void)
 			{
 			_putchar(firstdigit);
 			}
-			
+		if (y != 0)
+		{		
 		_putchar(lastdigit);
-
+		}
 		if (y <= 8)
 		{
 		_putchar(',');
 		}
-		if (y <= 8 && y > 1)
+		if (y <= 8)
 		{
 		_putchar(' ');
 		}

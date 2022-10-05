@@ -17,36 +17,37 @@ void times_table(void)
 		z1 = ((z / 10) + '0');
 		z2 = ((z % 10) + '0');
 
-		if (z1 > 48)
-		{
-			_putchar(z1);
-		}
+			if (z1 > 48)
+			{
+				_putchar(z1);
+			}	
 
-		if (y <= 8)
-		{
-			_putchar(z2);
-			_putchar(',');
-		}
-			else
-		{	
-			_putchar(z2);
-		}
-		
-		if (z1 >= 49 && z1 <= 57)
-		{	
 			if (y <= 8)
-			{
-				_putchar(' ');
+			{	
+				_putchar(z2);
+				_putchar(',');
 			}
-		}
-		else if 
-		{
-			_putchar(' ');
-			_putchar(' ');
-		}
-		if (z2 >= 48 && y <= 8)
+
+				else
+				{	
+					_putchar(z2);
+				}	
+		
+			if (z1 >= 49 && z1 <= 57)
+			{	
+				if (x <= 8)
+				{	
+					_putchar(' ');
+				}
+			}	
+				else if
+				{	
+					_putchar(' ');
+					_putchar(' ');
+				}
+			if (z2 >= 48 && y <= 8)
 			{
-				_putc
+				
 			}
 		}
 	_putchar('\n');

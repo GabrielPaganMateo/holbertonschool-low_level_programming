@@ -31,9 +31,8 @@ void times_table(void)
 		if (y <= 8)
 		{
 		_putchar(',');
-		}
-
 		_putchar(' ');
+		}
 
                 }
         _putchar('\n');

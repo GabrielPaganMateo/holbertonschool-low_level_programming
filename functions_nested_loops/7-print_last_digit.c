@@ -14,19 +14,22 @@ int print_last_digit(int n)
 	if (x < 0)
 	{
 		x = n * (-1);
-		_putchar(x + x);
+		_putchar(x);
+		_putchar(x);
 		_putchar(' ');
 	}
 	else if (x > 0)
 	{
-		_putchar(x + x);
+		_putchar(x)
+		_putchar(x);
 		_putchar(' ');
 	}
 	else
 	{
-		_putchar(x + x);
+		_putchar(x);
+		_putchar(x);
 		_putchar(' ');
 	}
 
-	return (x + x);
+	return (x);
 }

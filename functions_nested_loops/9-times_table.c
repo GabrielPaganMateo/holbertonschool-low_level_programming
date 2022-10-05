@@ -31,6 +31,9 @@ void times_table(void)
 		if (y <= 8)
 		{
 		_putchar(',');
+		}
+		if (y <= 8 && y > 0)
+		{
 		_putchar(' ');
 		}
 

@@ -17,8 +17,6 @@ void times_table(void)
                 firstdigit = ((z / 10) + '0');
                 lastdigit = ((z % 10) + '0');
 
-		_putchar(' ');
-
 		if (z <= 9)
 		{
 			_putchar(' ');

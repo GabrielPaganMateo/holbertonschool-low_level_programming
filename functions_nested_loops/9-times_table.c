@@ -32,7 +32,7 @@ void times_table(void)
 		{
 		_putchar(',');
 		}
-		if (y <= 8 && y > 0)
+		if (y <= 8 && y > 1)
 		{
 		_putchar(' ');
 		}

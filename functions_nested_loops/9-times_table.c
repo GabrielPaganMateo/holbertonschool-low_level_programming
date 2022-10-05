@@ -26,16 +26,21 @@ void times_table(void)
 		{
 			_putchar(z2);
 			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
 		}
 		else
 		{
 			_putchar(z2);
 		}
+		if (z1 >= 49 && z1 <= 57)
+		{
+			_putchar(' ');
+		}
+		else
+		{
+			_putchar(' ');
+			_putchar(' ');
+		}
 		}
 	_putchar('\n');
-		}
+	}
 }
-
-

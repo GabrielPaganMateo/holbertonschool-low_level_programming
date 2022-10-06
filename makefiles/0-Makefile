@@ -1,2 +1,2 @@
 all: school
-	make school.c
+	./school.c

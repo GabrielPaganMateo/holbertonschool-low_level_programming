@@ -1,2 +1,2 @@
-all: 0-Makefile
+all: 
 	./school

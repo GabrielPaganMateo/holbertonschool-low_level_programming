@@ -1,2 +1,2 @@
-all: school
+all: school.c
 	./school

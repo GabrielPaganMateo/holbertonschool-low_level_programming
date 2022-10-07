@@ -11,25 +11,23 @@ int main(void)
 	{
 		if ((num % 3) == 0)
 		{
-			printf("Fizz");
+			printf("Fizz ");
 		}
 		else if ((num % 5) == 0)
 		{
+			if (num != 100)
+			printf("Buzz ");
+			else 
 			printf("Buzz");
-
 		}
 		else if ((num % 15) == 0)
 		{
-			printf("FizzBuzz");
+			printf("FizzBuzz ");
 		}
 		else
 		{
-			printf("%i", num);
+			printf("%i ", num);
 		}
-			if (num < 100)
-			{
-			printf(" ");
-			}
 	}
 	return (0);
 }

@@ -29,5 +29,6 @@ int main(void)
 			printf("%i ", num);
 		}
 	}
-	return (0);
+	printf("\n");
+return (0);
 }

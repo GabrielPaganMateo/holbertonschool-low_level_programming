@@ -25,8 +25,7 @@ for (rep = 0 ; rep < n ; rep++)
 	}
 	_putchar ('\n');
 }
-else
-{
-	_putchar ('\n')
 }
+else
+	_putchar ('\n');
 }

@@ -12,15 +12,11 @@ int main(void)
 		if ((num % 3) == 0)
 		{
 			printf("Fizz");
-			printf(" ");
 		}
 		else if ((num % 5) == 0)
 		{
 			printf("Buzz");
-			if (num < 99)
-			{
-				printf(" ");
-			}
+
 		}
 		else if ((num % 15) == 0)
 		{
@@ -29,9 +25,11 @@ int main(void)
 		else
 		{
 			printf("%i", num);
-			printf(" ");
 		}
-
+			if (num < 99)
+			{
+			printf(" ");
+			}
 	}
 	return (0);
 }

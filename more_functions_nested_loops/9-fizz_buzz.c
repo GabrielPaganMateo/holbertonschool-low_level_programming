@@ -5,22 +5,24 @@
  */
 int main(void)
 {
-	int num;
+	int num, three, five;
+	three = num % 3
+	five = num % 5
 
 	for (num = 1 ; num <= 100 ; num++)
 	{
-		if ((num % 3) == 0)
+		if (three == 0)
 		{
 			printf("Fizz ");
 		}
-		else if ((num % 5) == 0)
+		else if (five == 0)
 		{
 			if (num != 100)
 			printf("Buzz ");
 			else 
 			printf("Buzz");
 		}
-		else if ((num % 15) == 0)
+		else if (three == 0 && five == 0)
 		{
 			printf("FizzBuzz ");
 		}

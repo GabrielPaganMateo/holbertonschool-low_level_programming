@@ -26,7 +26,7 @@ int main(void)
 		{
 			printf("%i", num);
 		}
-			if (num < 99)
+			if (num <= 99)
 			{
 			printf(" ");
 			}

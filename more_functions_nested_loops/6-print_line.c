@@ -10,11 +10,7 @@ void print_line(int n)
 
 	if (n > 0)
 	{
-<<<<<<< HEAD
 		for (rep = 0 ; rep <= n ; rep++)
-=======
-		for (rep = 0 ; rep < n ; rep++)
->>>>>>> f0a453d104e05a19fdc7570eb6b5361d9d74ab30
 		{
 			_putchar('_');
 		}

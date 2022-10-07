@@ -8,11 +8,8 @@ void print_diagonal(int n)
 {
 	int rep, space;
 
-if (n <= 0)
+if (n > 0)
 {
-
-}
-else
 for (rep = 0 ; rep < n ; rep++)
 {
 	for (space = 0 ; space < rep ; space++)
@@ -27,5 +24,9 @@ for (rep = 0 ; rep < n ; rep++)
 		_putchar(92);
 	}
 	_putchar ('\n');
+}
+else
+{
+	_putchar ('\n')
 }
 }

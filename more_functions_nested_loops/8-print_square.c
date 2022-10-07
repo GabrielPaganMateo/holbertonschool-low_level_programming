@@ -10,9 +10,9 @@ void print_square(int size)
 
 	if (size > 0)
 	{
-		for (width = 0 ; width <= size ; width++)
+		for (width = 0 ; width < size ; width++)
 		{
-			for (length = 0 ; length <= size ; length++)
+			for (length = 0 ; length < size ; length++)
 			{
 				_putchar('#');
 			}

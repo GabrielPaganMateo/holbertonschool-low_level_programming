@@ -7,6 +7,7 @@
 void print_diagonal(int n)
 {
 	int rep, space;
+
 for (rep = 0 ; rep < n ; rep++)
 {
 	for (space = 0 ; space < rep ; space++)

@@ -6,7 +6,9 @@
  */
 void print_triangle(int size)
 {
-	int rep, space; 
+	int rep, space, size2, bloc;
+
+	size2 = size;
 
 	if (size <= 0)
 	{
@@ -15,9 +17,18 @@ void print_triangle(int size)
 	else
 		for (rep = 0 ; rep < size ; rep++)
 		{
-			for (space = 10 ; space < size ; space--)
+			for (space = 1; space < size2 ; space++)
+			{
+				_putchar(' ');
+			}
+			if (rep < size)
+			{
+				size2--;
+			}
+			for (bloc = 0; bloc <= rep ; bloc++)
 			{
 				_putchar('#');
 			}
+			_putchar('\n');
 		}
-}						
+}

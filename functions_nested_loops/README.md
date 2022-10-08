@@ -11,6 +11,5 @@
   7. Prints the last digit of a number
   8. Print every minute of the day, in a row and in 24 hour notation
   9. Prints the 9 multiplications table
- 10. 
-  
-
+ 10. Adds two integers and returns the result
+ 11. Print all natural numbers from n to 98

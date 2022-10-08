@@ -5,5 +5,5 @@
 
 ## Table of contents
 * [Hello World](hello_world/)
-* [Variables, If, Else, While] 
+* [Variables, If, Else, While](variables_if_else_while/)
 

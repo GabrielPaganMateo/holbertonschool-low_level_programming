@@ -1,5 +1,5 @@
 # Holberton School Low level programming
-## This directory was made to store tasks related to the variables, if, else, while project, along with its tasks
+## This directory was made to store tasks & files related to the variables, if, else, while project
 ### Tasks & Descriptions of .c files
   0. Assign random number to variable n and print sign of that number.
   1. Print last digit of assigned random number and analyze value of digit.

@@ -6,7 +6,7 @@
  */
 void rev_string(char *s)
 {
-int i, j, k, l, length;
+int i, j, k, l, length, rep;
 char temp;
 
         length = 0;
@@ -18,11 +18,16 @@ char temp;
 	
 	j = length - 1;
 	l = length / 2;
+	i = j;
+	k = 0;
 
-        for (i = j, k = 0 ; i <= l ; i-- , k++)
+        for (rep = 0; rep < l ; rep++)
 	{	
 		temp = *(s + k);
                *(s + k) = *(s + i);
 		*(s + i) = temp;
+
+		k++;
+		i--;
         }
 }

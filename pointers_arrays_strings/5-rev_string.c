@@ -24,6 +24,4 @@ char temp;
                *(s + k) = *(s + i);
 		*(s + i) = temp;
         }
-	
-	l = length / 2;
 }

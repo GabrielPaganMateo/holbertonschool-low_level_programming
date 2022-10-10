@@ -1,5 +1,5 @@
 /**
- * swap_init - swaps the value of two integers
+ * swap_int - swaps the value of two integers
  * @a: first integer
  * @b: second integer
  * Return: Sum of both integers

@@ -12,16 +12,16 @@ void puts_half(char *str)
 
 	while (*(str + length) != '\0')
 	{
-		length++
+		length++;
 	}
-	
+
 	l = length;
 
 	if (length % 2 == 0)
 	{
 		l = length / 2;
 	}
-	else 
+	else
 	{
 		l = (length - 1) / 2;
 	}

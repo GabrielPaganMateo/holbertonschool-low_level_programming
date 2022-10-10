@@ -23,5 +23,8 @@ char temp;
 		temp = *(s + k);
                *(s + k) = *(s + i);
 		*(s + i) = temp;
+		
+		*(s + i)++;
+		*(s + k)--;
         }
 }

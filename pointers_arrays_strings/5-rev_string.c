@@ -18,13 +18,10 @@ char temp;
 	
 	j = length - 1;
 
-        for (i = j, k = 0 ; i >= 0 ; i-- , k++)
+        for (i = j, k = 0 ; i <= length ; i-- , k++)
 	{	
-		temp = *(s + k);
-               *(s + k) = *(s + i);
-		*(s + i) = temp;
-		
-		*(s + i)++;
-		*(s + k)--;
+		temp = *(s + i);
+               *(s + i) = *(s + k);
+		*(s + k) = temp;
         }
 }

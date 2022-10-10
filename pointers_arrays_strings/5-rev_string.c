@@ -21,8 +21,8 @@ char temp;
 
         for (i = j, k = 0 ; i <= l ; i-- , k++)
 	{	
-		temp = *(s + i);
+		temp = *(s + k);
                *(s + k) = *(s + i);
-		*(s + k) = temp;
+		*(s + i) = temp;
         }
 }

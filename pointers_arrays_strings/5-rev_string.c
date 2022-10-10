@@ -17,7 +17,7 @@ int i, j;
 	
 	j = j - 1;
 
-        for (i = j ; i > 0 ; i--)
+        for (i = j ; i > (-1) ; i--)
 
         {
                 s[j] = (*(s + i));

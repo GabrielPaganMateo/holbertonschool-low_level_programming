@@ -1,16 +1,12 @@
-# Holberton School Low level programming project
+# Holberton School Low level programming
 
-## This directory was made to store the tasks and work done as part of the "Hello World Project"
+## General info
+* Directory for training projects in C-language and Shell terminal commands
 
-### Includes scripts with permission commands within the shell & lines of C code
+## Table of contents
+* [Hello, World](hello_world/)
+* [Variables, If, Else, While](variables_if_else_while/)
+* [Functions, nested loops](functions_nested_loops/)
+* [Makefiles](makefiles/)
+* [More functions, more nested loops](more_functions_nested_loops)
 
-#### Script Descriptions:
-0. gcc $CFILE -E > c {runs a C file through the preprocessor and save the result into another file
-1. gcc -c $CFILE {compiles a C file but does not link
-2. gcc $CFILE -S > main.s {generates the assembly code of a C code and save it in an output file
-3. gcc $CFILE -o cisfun {compiles a C file and creates an executable named cisfun
-
-#### C code Descriptions:
-4. C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
-5. C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
-6. C program that prints the size of various types on the computer it is compiled and run on.

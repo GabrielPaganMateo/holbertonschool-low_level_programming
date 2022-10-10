@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main- Print numbers 1 to 100, fizz if multiple of 3 & buzz if multiple of 5
+ * main- Print numbers 1 to 100, fizz if multiple of 3 & buzz if multiple of 5 & FizzBuzz if multiple of both
  * Return: Number, fizz or buzz
  */
 int main(void)

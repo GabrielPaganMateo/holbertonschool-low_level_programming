@@ -8,11 +8,11 @@
 int _strcmp(char *s1, char *s2)
 {
 	int i, length;
-	char comp1, comp2;
+	char *comp1, *comp2;
 
 	while (s1[length] != '\0')
 	{
-		length++
+		length++;
 	}
 
 	for (i = 0; ; i++)

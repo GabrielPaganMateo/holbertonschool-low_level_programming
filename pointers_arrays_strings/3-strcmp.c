@@ -17,8 +17,8 @@ int _strcmp(char *s1, char *s2)
 
 	for (i = 0; ; i++)
 	{
-		comp1[i] = s1[i];
-		comp2[i] = s2[i];
+		*(comp2 + i) = s1[i];
+		*(comp2 + i) = s2[i];
 	
 		if (comp1[i] != comp2[i])
 		{

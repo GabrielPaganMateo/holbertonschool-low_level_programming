@@ -17,16 +17,16 @@ void puts_half(char *str)
 
 	if (length % 2 == 0)
 	{
-		for (even = length/2 ; str[even] != '\0'; even++)
+		for (even = length / 2 ; str[even] != '\0'; even++)
 		{
 			_putchar(str[even]);
 		}
 	}
 	else
 	{
-		for (odd = (length - 1)/2; odd < length-1; odd++)
+		for (odd = (length - 1) / 2; odd < length - 1; odd++)
 		{
-			_putchar(str[odd+1]);
+			_putchar(str[odd + 1]);
 		}
 	}
 	_putchar('\n');

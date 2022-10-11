@@ -5,13 +5,13 @@
  * @src: second string
  * @n: number of elements from second string
  */
-char *strncat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int dlength, i;
 
 	while (dest[dlength] != '\0')
 	{
-		dlength++
+		dlength++;
 	}
 
 	for (i = 0; i < n && src[i] != '\0'; i++)

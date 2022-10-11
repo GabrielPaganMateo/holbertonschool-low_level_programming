@@ -7,7 +7,7 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int slen, dlen, i;
+	int dlen, i;
 
 	dlen = 0;
 
@@ -16,7 +16,7 @@ char *_strcat(char *dest, char *src)
 		dlen++;
 	}
 
-	for (i = 0 ; i < n && src[i] != '\0' ; i++)
+	for (i = 0 ; src[i] != '\0' ; i++)
 	{
 		dest[dlen + i] = src[i];
 		dest[dlen + i] = '\0';

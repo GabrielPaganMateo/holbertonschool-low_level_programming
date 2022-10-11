@@ -13,21 +13,26 @@ void print_array(int *a, int n)
 	if (n == 0 || n == (-1))
 	{
 		n = 1;
-	}
-
-	for (i = 0 ; i < n ; ++i)
-	{
-		printf("%d", *a);
-		++a;
-
-		if (i < (n - 1))
-		{
-			printf(", ");
-		}
-		else if (i == (n - 1))
+		for (i = 0 ; i <= n ; ++i)
 		{
 			printf("\n");
-		}
+		}	
 	}
+	else if
+	{
 
+		for (i = 0 ; i < n ; ++i)
+		{
+			printf("%d", *a);
+			++a;
+
+			if (i < (n - 1))
+			{
+				printf(", ");
+			}
+			else if (i == (n - 1))
+			{
+				printf("\n");
+			}
+		}
 }

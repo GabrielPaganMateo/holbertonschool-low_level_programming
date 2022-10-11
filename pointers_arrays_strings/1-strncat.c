@@ -4,10 +4,13 @@
  * @dest: first string
  * @src: second string
  * @n: number of elements from second string
+ * Return: string of characters
  */
 char *_strncat(char *dest, char *src, int n)
 {
 	int dlength, i;
+
+	dlength = 0;
 
 	while (dest[dlength] != '\0')
 	{

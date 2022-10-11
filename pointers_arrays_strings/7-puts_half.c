@@ -25,18 +25,9 @@ void puts_half(char *str)
 	{
 		l = (length - 1) / 2;
 	}
-	
-	if (l < 20)
-	{
-	for (i = l ; i < (l * 2)  ; i++)
-	{
-		_putchar(*(str + i));
-	}
-	}
-	else
-	for (i = l ; i < ((l * 2) - 1) ; i++)
-	{
-		_putchar(*(str + i));
-	}
+		for (i = l ; i < (l * 2)  ; i++)
+		{
+			_putchar(*(str + i));
+		}
 	_putchar('\n');
 }

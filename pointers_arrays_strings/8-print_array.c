@@ -8,9 +8,9 @@
  */
 void print_array(int *a, int n)
 {
-	int i, array[];
+	int i, array[n];
 
-	a = &array[]
+	a = &array[n];
 
 	for (i = 0 ; i < n ; i++)
 	{

@@ -144,7 +144,7 @@ char *cap_string(char *str)
                         }
                         continue;
                 }
-		if (str[i] == '\n')
+		if (str[i] == '\0')
                 {
                         ++i;
                         if(str[i] >= 'a' && str[i] <= 'z')

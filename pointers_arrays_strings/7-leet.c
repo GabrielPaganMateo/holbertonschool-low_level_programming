@@ -9,8 +9,8 @@ char *leet(char *str)
 	int i, j;
 	j = 0;
 	
-	char let[9] = {'A', 'E', 'O', 'T', 'L', 'a', 'e', 'o', 't', 'l'};
-	char num[5] = {'4', '3', '0', '7', '1'};
+	char let[10] = {'A', 'E', 'O', 'T', 'L', 'a', 'e', 'o', 't', 'l'}
+	char num[5] = {'4', '3', '0', '7', '1'}
 
 	for (i = 0 ; str[i] != '\0' ; i++)
 	{

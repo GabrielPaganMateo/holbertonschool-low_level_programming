@@ -135,6 +135,15 @@ char *cap_string(char *str)
                         }
                         continue;
                 }
+		if (str[i] == '\r')
+                {
+                        ++i;
+                        if(str[i] >= 'a' && str[i] <= 'z')
+                        {
+                                str[i] = str[i] - 32;
+                        }
+                        continue;
+                }
 	}
 	return (str);
 }

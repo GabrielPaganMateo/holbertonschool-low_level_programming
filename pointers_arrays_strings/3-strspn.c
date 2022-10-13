@@ -19,7 +19,10 @@ unsigned int _strspn(char *s, char *accept)
 			{
 				len++;
 			}
-
+			if (accept[j] == "")
+			{
+				return(0);
+			}	
 		}
 	}
 	return (len);

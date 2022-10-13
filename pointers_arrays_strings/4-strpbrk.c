@@ -13,6 +13,6 @@ char *_strpbrk(char *s, char *accept)
                 {
                         return (s);
                 }
-        } while (*s++);
+        } while (*s++ && *accept++);
         return (0);
 }

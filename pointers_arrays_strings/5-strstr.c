@@ -21,15 +21,11 @@ char *_strstr(char *haystack, char *needle)
 				{
 					return (needle);
 				}
-				else
-				{
-					continue;
-				}
 			}
 		}
-		else
+		else 
 		{
-			return (haystack);
+			j++;
 		}
 	}
 	return (0);

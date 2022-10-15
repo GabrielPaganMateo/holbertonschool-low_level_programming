@@ -8,12 +8,12 @@
  */
 void print_diagsums(int *a, int size)
 {
-	long long int i, sum1, sum2;
+	int i, sum1, sum2;
 
 	for (i = 0 ; i < size ; i++)
 	{
 		sum1 += *(a + (i * size + i));
 		sum2 += *(a + (i * size + (size - i - 1)));
 	}
-	printf("%lld, %lld\n", sum1, sum2);
+	printf("%d, %d\n", sum1, sum2);
 }

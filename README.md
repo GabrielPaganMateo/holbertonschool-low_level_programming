@@ -9,4 +9,5 @@
 * [Functions, nested loops](functions_nested_loops/)
 * [Makefiles](makefiles/)
 * [More functions, more nested loops](more_functions_nested_loops)
+* [Pointers, arrays, and strings](pointers_arrays_strings)
 

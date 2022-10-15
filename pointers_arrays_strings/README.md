@@ -16,4 +16,13 @@
 ----------------------------------------------------------------------------------------------------------------
 ## "More Pointers, Arrays, and Strings"
 ### Tasks and Descriptions of .c files
-  0.
+  0. strcat - Concatenates two string
+  1. strncat - concatenate two strings
+  2. strncpy - Copy a string
+  3. strcmp - Compares two string
+  4. rev_array - Reverse the content of an array of integers
+  5. string_toupper - Changes all lowercase letters of string to uppercase
+  6. cap_string - Capitalizes all words of a string
+  7. leet - Encode a string into 1337
+## "Even More Pointers, Arrays, and Strings"
+### Tasks and Descriptions of .c files

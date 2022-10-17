@@ -1,0 +1,4 @@
+1. Make an if statement with the condition that (*s), if true then call print_rev_recursion of "s + 1" in order and putchar "*s".
+
++Resources
+https://www.youtube.com/watch?v=iWQ5rGWmkXw

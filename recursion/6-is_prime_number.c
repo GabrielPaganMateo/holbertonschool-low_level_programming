@@ -17,17 +17,15 @@ int _prime(int i, int n)
 	{
 		return (0);
 	}
-
-	if (n == i)
+	else if (n == i)
 	{
 		return (1);
 	}
-
-	if (n % i == 0)
+	else if (n % i == 0)
 	{
 		return (0);
 	}
-
+	else
 	return (_prime(i + 1, n));
 }
 

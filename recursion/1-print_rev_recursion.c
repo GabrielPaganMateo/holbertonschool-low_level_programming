@@ -6,7 +6,11 @@
  */
 void _print_rev_recursion(char *s)
 {	
-	int i;
+	if (*s == '\0')
+	{
+		_putchar('\n');
+		return;
+	}
 
 	if (*s != '\0')
 	{

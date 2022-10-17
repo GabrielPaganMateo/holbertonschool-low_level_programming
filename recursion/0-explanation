@@ -1,0 +1,8 @@
+1. Create an if statement that checks for equality (==) between the dereferenced string "*s" and the null byte "\0", if true then putchar a newline followed by a return statement.
+
+2. Print the current dereferenced index of string "*s" with putchar 
+
+3. Increment the current index of string "s++"
+
+4. Create an if else statement that checks for inequality (!=) between the dereferenced string "*s"
+and the null byte "\0" , if true call _puts_recursion function, else putchar a "\n"

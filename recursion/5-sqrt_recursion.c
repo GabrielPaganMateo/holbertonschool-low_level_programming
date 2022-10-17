@@ -4,7 +4,7 @@
  *@n: number
  *Return: integer
  */
-int square_root(int 0, int n);
+int square_root(int r2, int n);
 int _sqrt_recursion(int n)
 {
 	return (square_root(0, n));
@@ -14,11 +14,11 @@ int square_root(int r2, int n)
 {
 	int perfect_square = r2 * r2;
 
-	if (perfect_square < n);
+	if (perfect_square < n)
 	{
 		return (square_root(r2 + 1, n));
 	}
-	else if (perfect_square > n);
+	else if (perfect_square > n)
 	{
 		return (-1);
 	}

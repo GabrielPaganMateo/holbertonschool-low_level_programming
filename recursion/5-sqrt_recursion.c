@@ -9,7 +9,11 @@ int _sqrt_recursion(int n)
 {
 	return (square_root(0, n));
 }
-
+/**
+ * square_root - finds the square root
+ * @r2: root of the square
+ * @n: given number
+ */
 int square_root(int r2, int n)
 {
 	int perfect_square = r2 * r2;

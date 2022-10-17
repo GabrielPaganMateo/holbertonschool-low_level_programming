@@ -6,19 +6,9 @@
  */
 void _puts_recursion(char *s)
 {
-	int i;
-
-	i = 0;
-
-	if (s[i] != '\0' && s[i] != s[0])
-	{
-		i++;
-	}
-
-	_putchar(s[i]);
-
-	if (s[i] != '\0')
-	{
-		_puts_recursion(s);
-	}
+	_putchar(s);
+	
+	s++;
+	
+	_puts_recursion(s);
 }

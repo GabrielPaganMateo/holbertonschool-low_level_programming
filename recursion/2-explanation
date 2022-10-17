@@ -1,0 +1,6 @@
+1. Make an if statement that checks if the dereferenced string is equal to "\0" null byte, if true then return 0.
+
+2. Make an else statement that returns 1 plus a call to the function with the argument s plus 1.
+
++Resource
+https://www.geeksforgeeks.org/program-for-length-of-a-string-using-recursion/

@@ -4,6 +4,7 @@
  * if yes then return 1 otherwise return 0
  * @n: given number
  */
+int _prime(int i, int n);
 int is_prime_number(int n)
 {
 	_prime(0, n);

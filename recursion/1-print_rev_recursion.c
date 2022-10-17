@@ -5,10 +5,13 @@
  * Return: characters
  */
 void _print_rev_recursion(char *s)
-{
-	if (s[i] != '\0')
+{	
+	int i;
+
+	if (*s != '\0')
 	{
-		reverse(s, i+1);
+		reverse(s);
+		s++;
 	}
 	_putchar('\n');
 	return;

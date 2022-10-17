@@ -2,6 +2,7 @@
 /**
  *_sqrt_recursion - Returns the natural square root of a number
  *@n: number
+ *@r2: root of the square
  *Return: integer
  */
 int square_root(int r2, int n);
@@ -13,6 +14,7 @@ int _sqrt_recursion(int n)
  * square_root - finds the square root
  * @r2: root of the square
  * @n: given number
+ * Return: integer
  */
 int square_root(int r2, int n)
 {

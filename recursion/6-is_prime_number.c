@@ -27,5 +27,6 @@ int _prime(int i, int n)
 		return (0);
 	}
 
-	return (_prime(i + 1, n);
+	return (_prime(i + 1, n));
+}
 

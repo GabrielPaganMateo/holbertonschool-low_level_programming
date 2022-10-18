@@ -1,5 +1,5 @@
 ## Holberton School Low level Programming
-#### This directory was made to store tasks & files related to C language recursion project.
+#### This directory was made to store tasks & files related to a C language project involving recursion.
 ----------------------------------------------------------------------------------------------------------------
 ## Recursion practice
 #### Descriptions of .c files 

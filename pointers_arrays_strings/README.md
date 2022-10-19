@@ -1,5 +1,5 @@
 # Holberton School Low level programming
-## This directory was made to store tasks & files related to multiple projects related to C language pointers, arrays, and strings.
+## This directory was made to store tasks & files of multiple projects related to C language pointers, arrays, and strings.
 ----------------------------------------------------------------------------------------------------------------
 ## "Pointers, Arrays, and Strings"
 ### Tasks and Descriptions of .c files

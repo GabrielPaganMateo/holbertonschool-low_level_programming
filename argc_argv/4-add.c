@@ -10,30 +10,29 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum, zero, num;
+	int i, sum, zero;
 	char Error[] = "Error";
 	sum = 0;
 	zero = 0;
 
 	if (argc == 1)
 	{
-		printf("%d\n", sum);
+		printf("%d\n", zero);
 		return (0);
 	}
 
-	for (i = 0 ; i < argc ; i++)
+	for (i = 0 ; argv[i] != NULL ; i++)
 	{
 		if (isdigit(argv[i]) != 0)
 		{
-			num = atoi(argv[i]);
-			zero += num;
-		}	
+			sum = sum + atoi(argv[i]);
+		}
 		else
 		{
 			printf("%s\n", Error);
 			return (1);
 		}
 	}
-	printf("%d\n", zero);
+	printf("%d\n", sum);
 	return (0);
 }

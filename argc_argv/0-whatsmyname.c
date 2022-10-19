@@ -6,7 +6,7 @@
  * @argv: argument array
  * Return: Integer
  */
-int myname(int argc, char *arg[])
+int myname(int argc, char *argv[])
 {
 	printf("%s\n", *argv[0]);
 

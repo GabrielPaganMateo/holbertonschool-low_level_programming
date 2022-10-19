@@ -7,16 +7,27 @@
  * @argv: argument array
  * Return: integer
  */
-int main(int __attribute__ ((unused)) argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int product, num1, num2;
+	char error[] = "Error";
 
+	if (argc < 3 && argc != 0 && argc != 1)
+	{
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[2]);
 
 	product = num1 * num2;
 
 	printf("%d\n", product);
+
+	return (0);
+	}
+	else
+	{
+		printf("%s\n", error);
+		return (1);
+	}
 
 	return (0);
 }

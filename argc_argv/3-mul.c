@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	int product, num1, num2;
 	char error[] = "Error";
 
-	if (argc < 3 && argc != 0 && argc != 1)
+	if (argc < 2 && argc != 0 && argc != 1)
 	{
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[2]);
@@ -20,8 +20,6 @@ int main(int argc, char *argv[])
 	product = num1 * num2;
 
 	printf("%d\n", product);
-
-	return (0);
 	}
 	else
 	{

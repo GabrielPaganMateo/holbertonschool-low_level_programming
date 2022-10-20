@@ -23,10 +23,12 @@ int main(int argc, char *argv[])
 	if (sum == 199)
 	{
 		printf("%s\n", Error);
+		return (1);
 	}
 	else
 	{
 		printf("%d\n", sum);
 		return (0);
 	}
+	return (0);
 }

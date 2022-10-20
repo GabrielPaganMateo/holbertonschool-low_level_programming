@@ -1,6 +1,6 @@
-## Holberton School Low level Programming
-### static_libraries
-### This directory was made to store tasks & files related to a C language static library project.
+### Holberton School - low_level_programming 
+## /static_libraries
+#### This directory was made to store tasks & files related to a C language static library project.
 ----------------------------------------------------------------------------------------------------------------
 ## Static Library Project Files
 | Name          | Description   |

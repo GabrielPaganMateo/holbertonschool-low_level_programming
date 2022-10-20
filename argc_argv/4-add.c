@@ -10,26 +10,23 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum, zero;
+	int i, sum;
 	char Error[] = "Error";
 
 	sum = 0;
-	zero = 0;
 
-	if (argc == 1)
-	{
-		printf("%d\n", zero);
-		return (0);
-	}
-
-	for (i = 0 ; argv[i] != NULL ; i++)
+	for (i = 1 ; i < argc ; i++)
 	{
 		sum = sum + atoi(argv[i]);
 	}
+
 	if (sum == 199)
 	{
 		printf("%s\n", Error);
 	}
-	printf("%d\n", sum);
-	return (0);
+	else
+	{
+		printf("%d\n", sum);
+		return (0);
+	}
 }

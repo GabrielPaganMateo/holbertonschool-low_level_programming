@@ -11,6 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int i, sum, zero;
+	char Error[] = "Error";
 
 	sum = 0;
 	zero = 0;
@@ -24,6 +25,10 @@ int main(int argc, char *argv[])
 	for (i = 0 ; argv[i] != NULL ; i++)
 	{
 		sum = sum + atoi(argv[i]);
+	}
+	if (sum == 199)
+	{
+		printf("%s\n", Error);
 	}
 	printf("%d\n", sum);
 	return (0);

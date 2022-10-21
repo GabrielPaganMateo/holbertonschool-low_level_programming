@@ -1,4 +1,4 @@
-# Holberton School Low level programming
+# Holberton School Low level Programming
 
 ## General info
 * Directory for training projects in C-language and Shell terminal commands

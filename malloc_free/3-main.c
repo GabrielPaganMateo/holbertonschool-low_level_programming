@@ -15,6 +15,11 @@ void print_grid(int **grid, int width, int height)
     int w;
     int h;
 
+	if (grid == NULL)
+	{
+		free(grid);
+	}
+
     h = 0;
     while (h < height)
     {
@@ -48,9 +53,5 @@ int main(void)
     grid[0][3] = 98;
     grid[3][4] = 402;
     print_grid(grid, 6, 4);
-	if (grid == NULL)
-	{
-		free(grid);
-	}
     return (0);
 }

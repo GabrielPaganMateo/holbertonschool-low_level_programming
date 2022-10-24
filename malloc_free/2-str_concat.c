@@ -13,11 +13,22 @@ char *str_concat(char *s1, char *s2)
 	int totalLength, length1, length2, i;
 	char *concatenated;
 
+	if (s1 == NULL)
+	{
+		s1[0] = ' ';
+		s1[1] = '\0';
+	}
+	if (s2 == NULL)
+	{
+		s2[0] = ' ';
+		s2[1] = '\0';
+	}
+
 	length1 = strlen(s1);
 	length2 = strlen(s2);
 	totalLength = length1 + length2;
 
-	concatenated = malloc(totalLength * sizeof(char));
+	concatenated = malloc((totalLength + 1) * sizeof(char));
 	
 	if (concatenated == NULL)
 	{

@@ -47,7 +47,7 @@ int checkNULL(char *s)
 {
 	if (s == NULL)
 	{
-		return(0);
+		return (0);
 	}
 	return (strlen(s));
 }

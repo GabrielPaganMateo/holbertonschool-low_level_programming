@@ -17,11 +17,6 @@ int main(int argc, char *argv[])
 
 	for (i = 1 ; i < argc ; i++)
 	{
-		if (arv[i] > 47 && argv[i] < 58)
-		{
-			printf("%s\n", Error);
-			return (1);
-		}
 		sum = sum + atoi(argv[i]);
 	}
 

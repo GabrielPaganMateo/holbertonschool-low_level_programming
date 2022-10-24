@@ -45,11 +45,11 @@ char *str_concat(char *s1, char *s2)
 		concatenated[i] = s1[i];
 	}
 
-	for (i = length1; i < (length1 + length2) ; i++)
+	for (i = 0; s2[i] != '\0'; i++)
 	{
-		concatenated[i] = s2[i];
+		concatenated[length1 + i] = s2[i];
 	}
-	concatenated[length1 + length2 + 1] = '\0';
+	concatenated[length1 + i] = '\0';
 
 	return (concatenated);
 }

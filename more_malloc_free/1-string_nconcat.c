@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
+int checkNULL(char *s);
 /**
  * string_nconcat - Concatenates two strings
  * @s1: first string
@@ -9,7 +10,6 @@
  * @s: parameter relevant on checkNULL function
  * Return: string of characters
  */
-int checkNULL(char *s);
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, length1, length2;

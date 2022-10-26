@@ -9,7 +9,6 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int *kalloc;
-	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 	{
@@ -22,10 +21,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	for (i = 0; i < nmemb ; i++)
-	{
-		kalloc[i] = 0;
-	}
-	
 	return (kalloc);
 }

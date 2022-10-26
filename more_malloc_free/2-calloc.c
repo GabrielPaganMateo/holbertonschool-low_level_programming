@@ -8,24 +8,40 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int i;
-	void *kalloc;
+	unsigned int *intalloc, i;
+	char *charalloc;
 
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
 
-	kalloc = malloc(nmemb * size);
-	if (kalloc == NULL)
+	if(size == 1)
+	{
+	intalloc = malloc(nmemb * size);
+	if (intalloc == NULL)
+	{
+		return (NULL);
+	}
+	else
+	{
+	for (i = 0; i < nmemb; i++)
+	{
+		intalloc[i] = 0;
+	}
+	return (intalloc);
+	}
+	}
+	else
+	charalloc = malloc(nmemb * size);
+	if (charalloc == NULL)
 	{
 		return (NULL);
 	}
 
 	for (i = 0; i < nmemb; i++)
 	{
-		kalloc[i] = 0;
+		charalloc[i] = 0;
 	}
-
-	return (kalloc);
+	return (charalloc);
 }

@@ -27,7 +27,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		{
 			charalloc[i] = '0';
 		}
-		return(charalloc);
+		return (charalloc);
 	}
 	else
 	{

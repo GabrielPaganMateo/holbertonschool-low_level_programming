@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
 /**
@@ -14,12 +15,13 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	if (min < 0)
-	{
-		min = min * (-1);
-	}
 
 	range = max - min;
+	
+	if (range == 0)
+	{
+		range = 1;
+	}
 
 	array = malloc(sizeof(int) * range);
 	if (array == NULL)
@@ -30,6 +32,7 @@ int *array_range(int min, int max)
 	for (i = min, j = 0; j < range; i++, j++)
 	{
 		array[j] = i;
+		printf("%d\n", array[j]);
 	}
 
 	return (array);

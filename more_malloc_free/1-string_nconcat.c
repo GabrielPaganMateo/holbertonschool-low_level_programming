@@ -6,6 +6,7 @@
  * @s1: first string
  * @s2: second string
  * @n: total bytes of s2
+ * @s: parameter relevant on checkNULL function
  * Return: string of characters
  */
 int checkNULL(char *s);
@@ -49,7 +50,7 @@ int checkNULL(char *s)
 {
 	if (s == NULL)
 	{
-		return(0);
+		return (0);
 	}
 	return (strlen(s));
 }

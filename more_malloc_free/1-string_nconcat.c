@@ -8,28 +8,14 @@
  * @n: total bytes of s2
  * Return: string of characters
  */
+int checkNULL(char *s);
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, length1, length2;
 	char *concat;
 
-	if (s1 == NULL)
-	{
-		length1 = 0;
-	}
-	else
-	{
-		length1 = strlen(s1);
-	}
-
-	if (s2 == NULL)
-	{
-		length2 = 0;
-	}
-	else
-	{
-		length2 = strlen(s2);
-	}
+	length1 = checkNULL(s1);
+	length2 = checkNULL(s2);
 
 	if (n >= length2)
 	{
@@ -51,7 +37,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		concat[length1 + i] = s2[i];
 	}
 	concat[length1 + i] = '\0';
-	
+
 	return (concat);
 }
-
+/**
+ * checkNULL - checks if string is NULL, if true return 0, else return strlen
+ * @s: string
+ * Return: return int
+ */
+int checkNULL(char *s)
+{
+	if (s == NULL)
+	{
+		return(0);
+	}
+	return (strlen(s));
+}

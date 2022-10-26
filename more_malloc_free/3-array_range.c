@@ -32,7 +32,6 @@ int *array_range(int min, int max)
 	for (i = min, j = 0; j < range; i++, j++)
 	{
 		array[j] = i;
-		printf("%d\n", array[j]);
 	}
 
 	return (array);

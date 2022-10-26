@@ -7,7 +7,6 @@ int checkNULL(char *s);
  * @s1: first string
  * @s2: second string
  * @n: total bytes of s2
- * @s: parameter relevant on checkNULL function
  * Return: string of characters
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)

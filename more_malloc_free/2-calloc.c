@@ -19,6 +19,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (size == sizeof(char))
 	{
 		charalloc = malloc(nmemb * size);
+		if (charalloc == NULL)
+		{
+			return (NULL);
+		}
 		for (i = 0; i < nmemb ; i++)
 		{
 			charalloc[i] = '0';

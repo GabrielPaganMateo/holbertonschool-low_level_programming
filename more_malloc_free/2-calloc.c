@@ -8,25 +8,24 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *calloc;
-	unsigned long int i;
+	unsigned int *kalloc;
+	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
 
-	calloc = malloc(nmemb * size);
-	if (calloc == NULL)
+	kalloc = malloc(nmemb * size);
+	if (kalloc == NULL)
 	{
 		return (NULL);
 	}
 
 	for (i = 0; i < (nmemb * size); i++)
 	{
-		calloc[i] = 0;
+		kalloc[i] = 0;
 	}
 	
-	return (calloc);
+	return (kalloc);
 }
-

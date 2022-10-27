@@ -1,8 +1,3 @@
 #ifndef ABS
-#define ABS(x)
-#endif
-#if x < 0
-#define ABS(x) ((x) * (-1))
-#elif x > 0
-#define ABS(x) ((x))
+#define ABS(x) ((x < 0) ? x * (-1) : (x > 0) ? x)
 #endif

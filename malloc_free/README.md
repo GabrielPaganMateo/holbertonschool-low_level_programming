@@ -7,8 +7,8 @@
 | ------------- |:--------------|
 | 0-create_array.c| Creates an array of chars, inititalized with a specific char|
 | 1-strdup.c | Returns a pointer to a newly allocated space in memory, with copy of string|
-| 2-args.c | Prints all arguments it receives|
-| 3-mul.c | Prints the product of multiplying two numbers|
-| 4-add.c | Prints the sum of positive numbers|
+| 2-str_concat.c| Concatenates two strings|
+| 3-alloc_grid.c| Returns a pointer to a 2 dimensional array of integers|
+| 4-free_grid.c| Frees a 2 dimensional array previously created|
 
 (*Table only includes files relevant to the completion of tasks*)

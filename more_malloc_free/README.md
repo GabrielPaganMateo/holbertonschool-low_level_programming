@@ -1,8 +1,8 @@
 ### Holberton School - low_level_programming 
-## /malloc_free
-#### This directory was made to store files related to a C language malloc_free project.
+## /more_malloc_free
+#### This directory was made to store files related to a C language more_malloc_free project.
 ----------------------------------------------------------------------------------------------------------------
-## Malloc & Free Project Files
+## More Malloc & Free Project Files
 | Name          | Description   |
 | ------------- |:--------------|
 | 0-malloc_checked.c| Allocates memory using malloc|

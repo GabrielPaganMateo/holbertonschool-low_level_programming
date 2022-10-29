@@ -13,3 +13,5 @@
 * [Recursion](recursion)
 * [Static Libraries](static_libraries)
 * [Argc & Argv](argc_argv)
+* [Malloc & Free](malloc_free)
+* [More Malloc & Free](more_malloc_free)

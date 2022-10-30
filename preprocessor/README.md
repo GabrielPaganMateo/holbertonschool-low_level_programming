@@ -7,7 +7,7 @@
 | ------------- |:--------------|
 | 0-object_like_macro.h| Defines macro SIZE as 1024|
 | 1-pi.h| Defines macro PI 3.14...|
-| 2-main.c| Uses __FILE__ macro to print name of the current file|
+| 2-main.c| Uses \_\_FILE\_\_ macro to print name of the current file|
 | 3-funtion_like_nacro.h| Defines a macro that replaces #x for absolute value|
 | 4-sum.h| Defines a macro that adds two numbers|
 

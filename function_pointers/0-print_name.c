@@ -7,9 +7,16 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
+	if (f == NULL)
+	{
+
+	}
+	else
+	{
 	void (*fptr)(char *);
 
 	fptr = f;
 
 	(*fptr)(name);
+	}
 }

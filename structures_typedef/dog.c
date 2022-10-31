@@ -1,5 +1,3 @@
-#ifndef DOG_H
-#define DOG_H
 /**
  * struct dog - Defines a new data type that includes name, age, and owner
  * @name: name of dog
@@ -12,4 +10,3 @@ struct dog
 	float age;
 	char *owner;
 };
-#endif

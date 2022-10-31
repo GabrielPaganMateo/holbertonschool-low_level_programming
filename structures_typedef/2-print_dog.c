@@ -11,12 +11,8 @@ void print_dog(struct dog *d)
 	{
 
 	}
-	else if (name == NULL || age == NULL || owner == NULL)
-	{
-	
-	}
 	else
 	{
-		printf ("Name: %s\nAge: %lf\nOwner: %s", d->name, d->age, d->owner);
+		printf ("Name: %s\nAge: %f\nOwner: %s", d->name, d->age, d->owner);
 	}
 }

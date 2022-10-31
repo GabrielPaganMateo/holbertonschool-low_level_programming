@@ -7,7 +7,7 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	void (*fptr)(char);
+	void (*fptr)(char *);
 
 	fptr = f;
 

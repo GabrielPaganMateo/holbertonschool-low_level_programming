@@ -3,6 +3,8 @@
 #include <stdio.h>
 /**
  * main - Accept arguments for operation
+ * @argc: argument count
+ * @argv: array of arguments
  */
 int main(int argc, char *argv[])
 {

@@ -9,7 +9,7 @@
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
-	(*fptr)(int);
+	int (*fptr)(int);
 
 	if (size <= 0)
 	{

@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 	int a, b, c;
 	char *s;
 
-	if (argc < 0 || argc > 4)
+	if (argc > 4 || argc < 4)
 	{
 		printf("Error\n");
 		exit(98);
@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 	s = argv[2];
-
+	
 	if (*s != '+' || *s != '-' || *s != '/' || *s != '%' || *s != '*')
 	{
 		printf("Error\n");

@@ -5,6 +5,7 @@
  * main - Accept arguments for operation
  * @argc: argument count
  * @argv: array of arguments
+ * Return: result of operation
  */
 int main(int argc, char *argv[])
 {

@@ -6,7 +6,7 @@
  * @cmp: pointer to function that compares values
  * Return: integer
  */
-int int_index(int *array, int size, int (*cmp)(int));
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 	(*fptr)(int);

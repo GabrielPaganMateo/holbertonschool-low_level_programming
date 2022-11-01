@@ -1,5 +1,4 @@
-#include "calc.h"
-//File that includes the 5 functions to perform simple operations
+#include "3-calc.h"
 /**
  * op_add - Sum two integers
  * @a: integer
@@ -11,7 +10,7 @@ int op_add(int a, int b)
 	return (a + b);
 }
 /**
- * op_add - Subtract two integers
+ * op_sub - Subtract two integers
  * @a: integer
  * @b: integer
  * Return: Subtraction

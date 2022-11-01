@@ -1,5 +1,6 @@
 #include "3-calc.h"
 #include <stddef.h>
+#include <string.h>
 /**
  *get_op_func - Selects the function to perform according to user input
  *@s: operator passed as argument
@@ -7,28 +8,25 @@
  */
 int (*get_op_func(char *s))(int, int)
 {
-	if (*s == '+')
+	op_t ops[] = {
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+	};
+
+	int i;
+
+	i = 0;
+	while (i < 5)
 	{
-		return (op_add);
+		if (strcmp(s, ops[i].op) == 0)
+		{
+			return (ops[i].f);
+		}
+		i++;
 	}
-	else if (*s == '-')
-	{
-		return (op_sub);
-	}
-	else if (*s == '*')
-	{
-		return (op_mul);
-	}
-	else if (*s == '/')
-	{
-		return (op_div);
-	}
-	else if (*s == '%')
-	{
-		return (op_mod);
-	}
-	else
-	{
-		return (NULL);
-	}
+	return (NULL);
 }

@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	b = atoi(argv[3]);
 	s = argv[2];
 
-	if (s != '+' || s != '-' || s != '/' || s != '%' || s != '*')
+	if (*s != '+' || *s != '-' || *s != '/' || *s != '%' || *s != '*')
 	{
 		printf("Error\n");
 		exit(99);

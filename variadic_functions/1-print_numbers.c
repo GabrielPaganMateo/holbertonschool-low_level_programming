@@ -15,5 +15,14 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		if (
-		x = va_arg(numbers, int)
+		x = va_arg(numbers, int);
+		printf("%d", x);
+
+		if (separator != NULL)
+		{
+			printf("%s", separator);
+		}
+	}
+	printf("\n");
+}
+

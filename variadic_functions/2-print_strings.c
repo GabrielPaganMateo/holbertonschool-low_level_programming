@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * print_strings - Prints strings
- * @separator - space between strings
- * @amount of strings
+ * @separator: space between strings
+ * @n: amount of strings
  * Return: Nothing
  */
 void print_strings(const char *separator, const unsigned int n, ...)

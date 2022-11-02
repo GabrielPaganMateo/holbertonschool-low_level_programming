@@ -9,7 +9,7 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
-	const char s;
+	const char * const s;
 
 	va_list strings;
 
@@ -19,11 +19,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		s = va_arg(strings, char);
 
-		if (s != NULL)
+		if (*s != NULL)
 		{
 			printf("%s", s);
 		}
-		else if (s == NULL)
+		else if (*s == NULL)
 		{
 			printf("(nil)");
 		}

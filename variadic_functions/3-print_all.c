@@ -7,5 +7,8 @@
  */
 void print_all(const char * const format, ...)
 {
-
+	while (format)
+	{
+		return (1);
+	}
 }

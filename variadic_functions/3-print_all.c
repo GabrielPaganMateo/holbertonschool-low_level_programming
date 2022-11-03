@@ -1,6 +1,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 /**
  * print_all - Prints anything
  * @format: list of data types passed to function
@@ -9,7 +10,7 @@
 void print_all(const char * const format, ...)
 {
 	int i;
-	char c;
+	char *c;
 	char *s;
 	double f;
 	va_list args;
@@ -25,22 +26,26 @@ void print_all(const char * const format, ...)
 			case 'i':
 			i = va_arg(args, int);
 			printf("%i", i);
+
 			case 'c':
-			c = va_arg(args, char);
+			c = va_arg(args, char*);
 			printf("%c", c);
+
 			case 's':
 			s = va_arg(args, char*);
 			printf("%s", s);
+
 			case 'f':
 			f = va_arg(args, double);
 			printf("%f", f);
+
 			default:
 			printf(" ");
 		}
 		i++;
 		if (format[i] == '\0')
 		{
-			exit();
+			return (NULL);
 		}
 	}
 	va_end(args);

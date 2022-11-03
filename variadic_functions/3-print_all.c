@@ -24,7 +24,7 @@ void print_all(const char * const format, ...)
 		}
 		else if (*format == 'c')
 		{
-			j = va_arg(args, int);
+			c = va_arg(args, int);
 			printf("%c", c);
 		}
 		else if (*format == 'f')
@@ -32,7 +32,6 @@ void print_all(const char * const format, ...)
 			d = va_arg(args, double);
 			printf("%f", d);
 		}
-		++format;
 	}
 	va_end(args);
 }

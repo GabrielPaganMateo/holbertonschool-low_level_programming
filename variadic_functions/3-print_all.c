@@ -8,7 +8,6 @@
  */
 void print_all(const char * const format, ...)
 {
-	char *s;
 	int i, c;
 	double d;
 	va_list args;

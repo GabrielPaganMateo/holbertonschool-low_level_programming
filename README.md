@@ -15,3 +15,6 @@
 * [Argc & Argv](argc_argv)
 * [Malloc & Free](malloc_free)
 * [More Malloc & Free](more_malloc_free)
+* [Structures & Typedef](structures_typedef)
+* [Function pointers](function_pointers)
+* [Variadic functions](variadic_functions)

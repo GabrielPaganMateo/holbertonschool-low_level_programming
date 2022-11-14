@@ -4,7 +4,7 @@
  * @head: head node
  * Return: head nodes data, n
  */
-int pop_listint(listint_t **head);
+int pop_listint(listint_t **head)
 {
 	int data;
 

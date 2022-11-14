@@ -22,12 +22,5 @@ list_t *add_node(list_t **head, const char *str)
 
 	*head = NewNode;
 	
-	if (NewNode->next != NULL)
-	{
-		return (NewNode->next);
-	}
-	else
-	{
-		return (NULL);
-	}
+	return (NewNode->next);
 }

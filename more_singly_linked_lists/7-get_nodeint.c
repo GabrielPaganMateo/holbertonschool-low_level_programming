@@ -7,6 +7,7 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
+	int data;
 	unsigned int count = 0;
 	listint_t *NthNode;
 
@@ -16,7 +17,8 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	{
 		if (count == index)
 		{
-			return (NthNode->n);
+			data = NthNode->n;
+			return (data);
 		}
 		count++;
 		NthNode = NthNode->next;

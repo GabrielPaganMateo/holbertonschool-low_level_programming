@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * clear_int - function that sets the value of a bit to 0 at given index
+ * clear_bit - function that sets the value of a bit to 0 at given index
  * @n: given number
  * @index: position to be set as 0
  * Return: 1 if worked, -1 if error

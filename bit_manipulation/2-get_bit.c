@@ -8,6 +8,11 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	int bit;
+	
+	if (index == 1)
+	{
+		return (0);
+	}
 
 	bit = (index >> n) & 1;
 

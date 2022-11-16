@@ -7,7 +7,7 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int bit;
+	int bit;
 
 	if (index == 1)
 	{

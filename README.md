@@ -18,3 +18,6 @@
 * [Structures & Typedef](structures_typedef)
 * [Function pointers](function_pointers)
 * [Variadic functions](variadic_functions)
+* [Singly Linked Lists](singly_linked_lists)
+* [More Singly Linked Lists](more_singly_linked_lists)
+* [Bit Manipulation](bit_manipulation)

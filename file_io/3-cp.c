@@ -31,13 +31,14 @@ int main (int argc, char *argv[])
 		exit(99);
 	}
 
-	totalByte = read(fd1, buf, 1024);
+	totalByte = read(fd1);
 
 	while (1)
 	{
 	readcount = read(fd1, buf, 1024);
 	write(fd2, buf, readcount);
-		if (buf == totalByte)
+	read(fd2, 
+		if (totalByte)
 		{
 			break;
 		}

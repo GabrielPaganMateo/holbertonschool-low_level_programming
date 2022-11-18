@@ -8,7 +8,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	ssize_t readANDprint = 0;
+	ssize_t readANDprint;
 
 	char *words = malloc(sizeof(char) * (letters + 1));
 
@@ -29,13 +29,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	words[letters + 1] = '\0';
 
 	close(fd);
-	
-	while (*words != '\0')
-	{
-		putchar(*words);
-		words++;
-		readANDprint += 1;
-	}
+
+	write(STDOUT_FILENO, words, letters);
+
+	readANDprint = letters;
 
 	return (readANDprint);
 }

@@ -28,11 +28,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	words[letters + 1] = '\0';
 
+	readANDprint = strlen(words);
+
 	close(fd);
 
-	write(STDOUT_FILENO, words, letters);
-
-	readANDprint = letters;
+	write(STDOUT_FILENO, words, readANDprint);
 
 	return (readANDprint);
 }

@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
 {
 	int fd1, fd2, cl1, cl2, readcount, writecount;
 	char *buf[1024];
+
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
@@ -50,7 +51,7 @@ int main(int argc, char *argv[])
 }
 /**
  * ReadError - prints read error
- * @argv - pointer to string
+ * @argv: pointer to string
  */
 void ReadError(char *argv)
 {
@@ -58,8 +59,8 @@ void ReadError(char *argv)
 	exit(98);
 }
 /**
- * WriteError
- * @argv - pointer to string
+ * WriteError - prints write error
+ * @argv: pointer to string
  */
 void WriteError(char *argv)
 {

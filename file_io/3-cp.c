@@ -23,7 +23,7 @@ int main (int argc, char *argv[])
 		exit(98);
 	}
 
-	fd2 = open(argv[2], O_CREAT | O_TRUNC | O_RDWR, 664);
+	fd2 = open(argv[2], O_CREAT | O_TRUNC | O_RDWR, 0664);
 
 	if (fd2 == -1 || argv[2] == NULL)
 	{

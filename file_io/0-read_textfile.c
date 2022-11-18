@@ -30,7 +30,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	close(fd);
 
-	readANDprint = write(1, words, (letters + 1));
+	readANDprint = write(1, words, letters);
 
 	return (readANDprint);
 }

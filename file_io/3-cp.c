@@ -6,7 +6,7 @@
  */
 int main (int argc, char *argv[])
 {
-	int fd1, fd2, cl1, cl2;
+	int fd1, fd2, cl1, cl2, readcount;
 	char *buf[1024];
 
 	if (argc != 3)
@@ -31,8 +31,8 @@ int main (int argc, char *argv[])
 		exit(99);
 	}
 
-		read(fd1, buf, 1024);
-		write(fd2, buf, 1024);
+		readcount = read(fd1, buf, 1024);
+		write(fd2, buf, readcount);
 
 	cl1 = close(fd1);
 	cl2 = close(fd2);

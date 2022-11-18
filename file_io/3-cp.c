@@ -31,8 +31,11 @@ int main (int argc, char *argv[])
 		exit(99);
 	}
 
+	while (argv[1] != EOF)
+	{
 	readcount = read(fd1, buf, 1024);
 	write(fd2, buf, readcount);
+	}
 
 	cl1 = close(fd1);
 	cl2 = close(fd2);

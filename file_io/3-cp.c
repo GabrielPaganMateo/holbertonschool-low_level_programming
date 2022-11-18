@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * main - copies the content of a file to another file
  * Return: integer
@@ -38,12 +39,12 @@ int main (int argc, char *argv[])
 
 	if (cl1 == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", cl1)
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", cl1);
 		exit(100);
 	}
 	else if (cl2 == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", cl2)
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", cl2);
 		exit(100);
 	}
 

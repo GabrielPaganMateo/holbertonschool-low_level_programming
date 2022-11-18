@@ -6,7 +6,7 @@
  */
 int main (int argc, char *argv[])
 {
-	int fd1, fd2, cl1, cl2, readcount;
+	int fd1, fd2, cl1, cl2;
 	char *buf[1024];
 
 	if (argc != 3)

@@ -35,12 +35,12 @@ int main (int argc, char *argv[])
 
 	while(1)
 	{
+
+		readcount = read(fd1, buf, 1024);
 		if (readcount == 0)
 		{
 			break;
 		}
-
-		readcount = read(fd1, buf, 1024);
 		if (readcount == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);

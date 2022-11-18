@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * read_textfile - Reads a text file and prints it to the POSIX stdout
- * @file: pointer to file
+ * @filename: pointer to file
  * @letters: number of letter to be read and printed
  * Return: Number of letters that have been read and print
  */
@@ -24,7 +24,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	read(fd, words, (letters + 1));
+	read(fd, words, (letters));
 
 	words[letters + 1] = '\0';
 

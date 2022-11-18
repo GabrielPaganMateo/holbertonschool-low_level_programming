@@ -2,11 +2,13 @@
 #include <stddef.h>
 /**
  * main - copies the content of a file to another file
+ * @argc: argument count
+ * @argv: array of arguments
  * Return: integer
  */
 int main (int argc, char *argv[])
 {
-	int fd1, fd2, cl1, cl2, readcount;
+	int fd1, fd2, cl1, cl2, readcount, writecount;
 	char *buf[1024];
 
 	if (argc != 3)
@@ -34,7 +36,19 @@ int main (int argc, char *argv[])
 	while(1)
 	{
 		readcount = read(fd1, buf, 1024);
-		write(fd2, buf, readcount);
+		writecount = write(fd2, buf, readcount);
+
+		if (readcount == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+			exit(98);
+		}
+
+		if (writecount == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			exit(99);
+		}
 
 		if (readcount == 0)
 		{

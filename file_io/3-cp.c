@@ -5,11 +5,12 @@
  */
 int main (int argc, char *argv[])
 {
-	int fd1, fd2;
+	int fd1, fd2, cl1, cl2, readcount;
+	char *buf[1024];
 
 	if (argc != 3)
 	{
-		write(1, "Usage: cp file_from file_to\n", 28);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
@@ -17,17 +18,34 @@ int main (int argc, char *argv[])
 
 	if (fd1 == -1 || argv[1] == NULL)
 	{
-		write(1, "Error: Can't read from file NAME_OF_THE_FILE\n", 45);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv);
 		exit(98);
 	}
 
-	fd2 = open(argv[2], O_CREAT | O_TRUNC | O_RDWR);
+	fd2 = open(argv[2], O_CREAT | O_TRUNC | O_RDWR, 664);
 
-	if (fd2 == -1)
+	if (fd2 == -1 || fd2 == NULL);
 	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[2]);
+		exit(99);
 	}
 
-	printf("TESTing printf");
+	readcount = read(fd1, buf, 1024);
+	write(fd2, buf, readcount);
+
+	cl1 = close(fd1);
+	cl2 = close(fd2);
+
+	if (cl1 == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", cl1)
+		exit(100);
+	}
+	else if (cl2 == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", cl2)
+		exit(100);
+	}
 
 	return(1);
 }

@@ -6,8 +6,7 @@
  */
 int main (int argc, char *argv[])
 {
-	int fd1, fd2, cl1, cl2, readcount;
-	FILE *file1 = argv[1];
+	int fd1, fd2, cl1, cl2, readcount, totalByte;
 	char *buf[1024];
 
 	if (argc != 3)
@@ -32,11 +31,13 @@ int main (int argc, char *argv[])
 		exit(99);
 	}
 
+	totalByte = read(fd1, buf, 1024);
+
 	while (1)
 	{
 	readcount = read(fd1, buf, 1024);
 	write(fd2, buf, readcount);
-		if (feof(file1))
+		if (buf == totalByte)
 		{
 			break;
 		}

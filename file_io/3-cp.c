@@ -18,13 +18,13 @@ int main (int argc, char *argv[])
 
 	if (fd1 == -1 || argv[1] == NULL)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 
 	fd2 = open(argv[2], O_CREAT | O_TRUNC | O_RDWR, 664);
 
-	if (fd2 == -1 || fd2 == NULL);
+	if (fd2 == -1 || fd2 == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[2]);
 		exit(99);

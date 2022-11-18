@@ -35,24 +35,23 @@ int main (int argc, char *argv[])
 
 	while(1)
 	{
-		readcount = read(fd1, buf, 1024);
-		writecount = write(fd2, buf, readcount);
+		if (readcount == 0)
+		{
+			break;
+		}
 
+		readcount = read(fd1, buf, 1024);
 		if (readcount == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
 		}
 
+		writecount = write(fd2, buf, readcount);
 		if (writecount == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
-		}
-
-		if (readcount == 0)
-		{
-			break;
 		}
 	}
 
@@ -69,7 +68,6 @@ int main (int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", cl2);
 		exit(100);
 	}
-
 	return(0);
 }
 

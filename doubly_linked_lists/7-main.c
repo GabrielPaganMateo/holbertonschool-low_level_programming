@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
+
 /**
  * main - check the code
  *
@@ -22,10 +23,7 @@ int main(void)
     add_dnodeint_end(&head, 1024);
     print_dlistint(head);
     printf("-----------------\n");
-    insert_dnodeint_at_index(&head, 5, 144);
-	insert_dnodeint_at_index(&head, 6, 145);
-	insert_dnodeint_at_index(&head, 7, 146);
-	insert_dnodeint_at_index(NULL, 11, 147);
+    insert_dnodeint_at_index(NULL, -5, 4096);
     print_dlistint(head);
     free_dlistint(head);
     head = NULL;

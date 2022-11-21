@@ -3,6 +3,7 @@
  * get_dnodeint_at_index - Returns the nth node of double linked list
  * @head: pointer to head of list
  * @index: nth node to be returned
+ * Return: address of node
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {

@@ -48,12 +48,15 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	while (i < (idx - 1) && temp2 != NULL)
 	{
+		printf("Inside Loop");
 		temp2 = temp2->next;
 		temp3 = temp3->next;
 		i++;
 	}
 	temp3 = temp3->next;
 
+	if (i == (idx - 1))
+	{
 	NewNode->prev = temp2;
 	NewNode->next = temp3;
 	temp2->next = NewNode;
@@ -62,4 +65,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		temp3->prev = NewNode;
 	}
 	return (NewNode);
+	}
+	else
+		return (NULL);
 }

@@ -6,9 +6,11 @@
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t *TABLE;
-
-	TABLE->size = size;
+	hash_table_t *TABLE = malloc(sizeof(hash_node_t) * size);
+	if (TABLE == NULL)
+	{
+		return (NULL);
+	}
 
 	return(TABLE);
 }

@@ -17,17 +17,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	index = key_index((unsigned char *) key, ht->size);
 
 	node->key = strdup(key);
-	if (node->key == NULL)
-	{
-		free(node->key);
-		return (0);
-	}
 	node->value = strdup(value);
-	if (node->value == NULL)
-	{
-		free(node->value);
-		return (0);
-	}
 	node->next = ht->array[index];
 	ht->array[index] = node;
 

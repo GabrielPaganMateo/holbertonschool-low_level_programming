@@ -31,13 +31,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	node->next = ht->array[index];
 	ht->array[index] = node;
 
-	while (node != NULL)
+	while (node)
 	{
 		if (strcmp(node->key, key) == 0)
 		{
 			free(node->value);
 			node->value = strdup(value);
-			return(1);
+			return (1);
 		}
 		node = node->next;
 	}

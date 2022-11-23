@@ -18,7 +18,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	node->key = strdup(key);
 	node->value = strdup(value);
-	node->next = ht->array[index];
 	ht->array[index] = node;
 
 	while (ht->array[index])

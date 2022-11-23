@@ -5,7 +5,7 @@
  * @size: size of the array
  * Return: index
  */
-unsigned long int key_index(const unsigned char *key, __unused__((attribute)) unsigned long int size)
+unsigned long int key_index(const unsigned char *key, unsigned long int __unused__((attribute)) size)
 {
 	unsigned long int index;
 

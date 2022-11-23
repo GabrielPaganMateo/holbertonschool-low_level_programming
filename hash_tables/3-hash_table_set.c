@@ -6,7 +6,7 @@
  * @value: value associated with the key
  * Return: 1 if success, 0 if failure
  */
-int hash_table_set(hash_table_t *ht, const *key, const char *value)
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
 	const char *valueDUP;

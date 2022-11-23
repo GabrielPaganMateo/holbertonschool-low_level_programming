@@ -28,15 +28,18 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free(node->value);
 		return (0);
 	}
+	node->next = ht->array[index];
+	ht->array[index] = node;
 
-	if (ht->array[index] == NULL)
+	while(node != NULL);
 	{
-		ht->array[index] = node;
+		if (strcmp(node->key, key) == 0)
+		{
+			free(node->value);
+			node->value = strdup(value);
+			return(1);
+		}
+		node = node->next;
 	}
-	else if (strcmp(node->key, key) == 0)
-	{
-		strcpy(ht->array[index]->value, value);
-	}
-
 	return (1);
 }

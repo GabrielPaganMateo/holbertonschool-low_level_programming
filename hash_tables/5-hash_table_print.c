@@ -33,7 +33,7 @@ void hash_table_print(const hash_table_t *ht)
 		
 		if (index->array[i]->next != NULL)
 		{
-			tmp = index->array[i];
+			*tmp = index->array[i];
 
 			while (tmp)
 			{

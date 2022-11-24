@@ -31,15 +31,16 @@ void hash_table_print(const hash_table_t *ht)
 			printf("{");
 
 		if (index->array[i]->next == NULL)
+		{
 			printf("'%s': '%s'", index->array[i]->key, ht->array[i]->value);
-		
-		if (i < j - 1)
-		{
-			printf(", ");
-		}
-		else
-		{
-			printf("}\n");
+			if (i < j - 1)
+			{
+				printf(", ");
+			}
+			else
+			{
+				printf("}\n");
+			}
 		}
 
 		if (index->array[i]->next != NULL)

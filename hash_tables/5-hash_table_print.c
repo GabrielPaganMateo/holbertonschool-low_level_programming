@@ -23,10 +23,10 @@ void hash_table_print(const hash_table_t *ht)
 		}
 	}
 
-	tmp = index->array;
-
 	for (i = 0; i < j; i++)
 	{
+		tmp = array->index[i];
+
 		if (i == 0)
 			printf("{");
 

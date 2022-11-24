@@ -45,6 +45,7 @@ void hash_table_print(const hash_table_t *ht)
 
 		if (index->array[i]->next != NULL)
 		{
+			printf("\n");
 			while (tmp)
 			{
 				printf("'%s': '%s'", tmp->key, tmp->value);
@@ -54,6 +55,7 @@ void hash_table_print(const hash_table_t *ht)
 				}
 				tmp = tmp->next;
 			}
+			printf("\n");
 		}
 	}
 }

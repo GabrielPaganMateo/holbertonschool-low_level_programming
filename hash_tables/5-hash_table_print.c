@@ -23,8 +23,6 @@ void hash_table_print(const hash_table_t *ht)
 		}
 	}
 
-	tmp = index->array;
-
 	for (i = 0; i < j; i++)
 	{
 		if (i == 0)
@@ -35,6 +33,8 @@ void hash_table_print(const hash_table_t *ht)
 		
 		if (index->array[i]->next != NULL)
 		{
+			tmp = index->array[i];
+
 			while (tmp)
 			{
 				*tmp = (*tmp)->next;

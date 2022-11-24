@@ -24,9 +24,13 @@ void hash_table_print(const hash_table_t *ht)
 
 	for (i = 0; i < j; i++)
 	{
-		if (index->array[i] && index->array[i]->next == NULL)
-		{
+		if (i = 0)
+			printf("{");
+
+		if (index->array[i]->next == NULL)
 			printf("'%s': '%s'", index->array[i]->key, ht->array[i]->value);
-		}
+
+		if (index->array[i] && index->array[i]->next != NULL)
+
 	}
 }

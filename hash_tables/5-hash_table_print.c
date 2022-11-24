@@ -41,5 +41,14 @@ void hash_table_print(const hash_table_t *ht)
 				tmp = tmp->next;
 			}
 		}
+
+		if (i < j - 1)
+		{
+			printf(", ");
+		}
+		else
+		{
+			printf("}");
+		}
 	}
 }

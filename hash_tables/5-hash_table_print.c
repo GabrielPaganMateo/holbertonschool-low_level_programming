@@ -38,6 +38,10 @@ void hash_table_print(const hash_table_t *ht)
 			while (tmp)
 			{
 				printf("'%s': '%s'", tmp->key, tmp->value);
+				if (i < j - 1)
+				{
+					printf(",");
+				}
 				tmp = tmp->next;
 			}
 		}
@@ -48,7 +52,7 @@ void hash_table_print(const hash_table_t *ht)
 		}
 		else
 		{
-			printf("}");
+			printf("}\n");
 		}
 	}
 }

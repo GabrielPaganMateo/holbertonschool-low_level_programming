@@ -5,21 +5,28 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned long int i;
+	unsigned long int i, j;
+	const hash_table_t *index;
 
 	if (ht == NULL)
 		return;
 
-	for (i = 0; i < ht->size; i++)
-	{
-		if (i == 0)
-		printf("{");
+	index = ht;
 
-		if (ht->array[i] && ht->array[i]->next == NULL)
+	for (i = 0, j = 0; i < ht->size; i++)
+	{
+		if (ht->array[i] != NULL)
 		{
-			printf("'%s': '%s'", ht->array[i]->key, ht->array[i]->value);
-			printf(" ");
+			index->array[j] = ht->array[i];
+			j++;
 		}
 	}
-	printf("}");
+
+	for (i = 0; i < j; i++)
+	{
+		if (index->array[i] && index->array[i]->next == NULL)
+		{
+			printf("'%s': '%s'", index->array[i]->key, ht->array[i]->value);
+		}
+	}
 }

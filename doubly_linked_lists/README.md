@@ -2,7 +2,7 @@
 ## /doubly_linked_lists
 #### This directory was made to store files related to a C language doubly linked lists project.
 ----------------------------------------------------------------------------------------------------------------
-## Doubley linked lists Files
+## Doubly Linked Lists Files
 | Name          | Description   |
 | ------------- |:--------------|
 | 0-print_dlistint.c|Print all the elements of a doubly linked list|

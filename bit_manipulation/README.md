@@ -1,8 +1,8 @@
 ### Holberton School - low_level_programming 
-## /more_singly_linked_lists
-#### This directory was made to store files related to a C language more singly linked lists project.
+## /bit_manipulation
+#### This directory was made to store files related to a C language bit manipulation project.
 ----------------------------------------------------------------------------------------------------------------
-## More singly linked lists Files
+## Bit Manipulation Files
 | Name          | Description   |
 | ------------- |:--------------|
 | 0-binary_to_uint.c|Converts a binary number to an unsigned int|

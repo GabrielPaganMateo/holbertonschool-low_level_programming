@@ -23,3 +23,4 @@
 * [Bit Manipulation](bit_manipulation)
 * [File I/O](file_io)
 * [Double Linked Lists](doubly_linked_lists)
+* [Hash Tables](hash_tables)

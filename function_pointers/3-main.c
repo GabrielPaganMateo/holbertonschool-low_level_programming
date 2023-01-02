@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	b = atoi(argv[3]);
 	s = argv[2];
 
-	if (*s == '+' || *s == '-' || *s == '/' || *s == '*' || *s == '%')
+	if (*s == '+' || *s == '-' || *s == '/' || *s == '*' || *s == '%' || argv[2][1] != '\0' )
 	{
 		c = get_op_func(s)(a, b);
 
